@@ -1,0 +1,76 @@
+<html lang="en"><head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Dashboard | Cosmic Pi | Watch cosmic rays in real time</title>
+
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/cosmicpi.css" rel="stylesheet">
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script src="/static/js/jquery.min.js"></script>
+
+    
+    <script>
+    var reloading;
+
+    function checkReloading() {
+        if (window.location.hash=="#autoreload") {
+            reloading=setTimeout("window.location.reload();", 5000);
+            document.getElementById("reloadCB").checked=true;
+        }
+    }
+
+    function toggleAutoRefresh(cb) {
+        if (cb.checked) {
+            window.location.replace("#autoreload");
+            reloading=setTimeout("window.location.reload();", 5000);
+        } else {
+            window.location.replace("#");
+            clearTimeout(reloading);
+        }
+    }
+
+    window.onload=checkReloading;
+    </script>
+
+</head>
+
+<body>
+    <div id="app"><div id="sidebar"><a href="#"><img src="/static/images/logo_small_transp.png" id="logo"></a> <hr class="hideable"> <ul><li><a href="https://cosmicpi.github.io/" target="_blank"><i class="fa fa-wechat"></i> <span class="hideable">Website <i class="fa fa-external-link"></i></span></a> <hr></li> <li><a href="/dashboard"><i class="fa fa-dashboard"></i> <span class="hideable">Dashboard</span></a></li> <li><a href="/plotting"><i class="fa fa-bar-chart"></i> <span class="hideable">Custom functionality</span></a></li> <li><a href="/settings"><i class="fa fa-gears"></i> <span class="hideable">Settings</span></a></li> <li><a href="/about"><i class="fa fa-info-circle"></i> <span class="hideable">About</span></a></li></ul> <hr class="hideable"> <p class="hideable"><a href="#">Clouds</a> |
+                <a href="#">Mountains</a> |
+                <a href="#">NASA</a></p> <hr class="hideable"> <p class="hideable">
+                Copyright © Cosmic Pi Inc. 2015. <br>All Rights Reserved. <br></p></div> <div id="content"><div class="row"><h1>Dashboard</h1> <div class="col-lg-6"><div class="panel panel-default"><div class="panel-heading"><input type="checkbox" onclick="toggleAutoRefresh(this);" id="reloadCB"> Auto refresh dashboard every 5 seconds
+            </div> <div class="panel-body"><img id="img" src="/histogram.png?start_time=-120&amp;end_time=9000000000&amp;bin_size_seconds=2"></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-microchip fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">0000000053359db9</div> <div>Hardware Serial</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-clock-o fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">1773176815</div> <div>UTCUnixTime</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-thermometer-half fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">14.709775</div> <div>TemperatureC</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-tint fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">61.672729</div> <div>Humidity</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-tachometer fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">-0.206979</div> <div>AccelX</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-tachometer fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">-0.044267</div> <div>AccelY</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-tachometer fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">9.660423</div> <div>AccelZ</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-compass fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">-0.03206</div> <div>MagX</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-compass fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">-0.03206</div> <div>MagY</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-compass fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">-0.32438</div> <div>MagZ</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-thermometer-half fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">0.0</div> <div>Pressure</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-map-marker fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">28.662505</div> <div>Longitude</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-map-marker fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">41.082255</div> <div>Latitude</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-info-circle fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">CosmicPiV1.6</div> <div>DetectorName</div></div></div></div></div></div> <div class="col-lg-4 col-md-6"><div class="panel panel-primary"><div class="panel-heading"><div class="row"><div class="col-xs-3"><i class="fa fa-info-circle fa-5x"></i></div> <div class="col-xs-9 text-right"><div class="huge" style="font-size: 24px;">1.6.1</div> <div>DetectorVersion</div></div></div></div></div></div></div></div></div>
+
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+    <!--<script src="/static/js/chart.min.js"></script>-->
+    <script src="/static/js/khtml_all.js"></script>
+    <!--<script src="/static/js/events.js"></script>-->
+    <!--<script src="/static/js/cosmicpi.js"></script>-->
+    <script src="/static/js/vue.min.js"></script>
+    <!-- The Vue router stops c3 (plotting lib) from working! -->
+    <script src="/static/js/vue-router.min.js"></script>
+
+    <script>
+
+    const router = new VueRouter({
+        routes: []
+    });
+    const app = new Vue({
+        router: router,
+        methods: {
+            onChange(name) {
+                node = document.getElementById('app');
+                node.style.backgroundImage = "url('/static/images/background_" + name + ".jpg')";
+            }
+        }
+    }).$mount('#app')
+    </script>
+
+</body></html>
