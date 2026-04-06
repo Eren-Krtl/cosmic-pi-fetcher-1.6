@@ -1,0 +1,5 @@
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/rust-analyzer-check/debug/deps/foreign_types_shared-a7dd21e2400e8d23.d: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foreign-types-shared-0.1.1/src/lib.rs
+
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/rust-analyzer-check/debug/deps/libforeign_types_shared-a7dd21e2400e8d23.rmeta: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foreign-types-shared-0.1.1/src/lib.rs
+
+/home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foreign-types-shared-0.1.1/src/lib.rs:

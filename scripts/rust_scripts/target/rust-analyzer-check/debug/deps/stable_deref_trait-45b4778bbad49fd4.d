@@ -1,0 +1,5 @@
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/rust-analyzer-check/debug/deps/stable_deref_trait-45b4778bbad49fd4.d: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stable_deref_trait-1.2.1/src/lib.rs
+
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/rust-analyzer-check/debug/deps/libstable_deref_trait-45b4778bbad49fd4.rmeta: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stable_deref_trait-1.2.1/src/lib.rs
+
+/home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/stable_deref_trait-1.2.1/src/lib.rs:
