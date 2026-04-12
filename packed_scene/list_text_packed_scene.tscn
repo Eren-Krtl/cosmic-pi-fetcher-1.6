@@ -9,7 +9,7 @@ offset_bottom = -660.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="." unique_id=377830131]
+[node name="Text" type="Label" parent="." unique_id=377830131]
 layout_mode = 0
 offset_right = 300.0
 offset_bottom = 40.0

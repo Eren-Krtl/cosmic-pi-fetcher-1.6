@@ -1,0 +1,9 @@
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/debug/deps/http_body-87007887b9be67b7.d: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/lib.rs /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/frame.rs /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/size_hint.rs
+
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/debug/deps/libhttp_body-87007887b9be67b7.rlib: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/lib.rs /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/frame.rs /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/size_hint.rs
+
+/home/erenk/editor/godot_games/cosmic_pi_fetcher_v_2_1.6/scripts/rust_scripts/target/debug/deps/libhttp_body-87007887b9be67b7.rmeta: /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/lib.rs /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/frame.rs /home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/size_hint.rs
+
+/home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/lib.rs:
+/home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/frame.rs:
+/home/erenk/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-1.0.1/src/size_hint.rs:

@@ -23,18 +23,19 @@ func _on_start_button_toggled(toggle_b: bool) -> void:
 	print("the toggle is : ", toggle_b)
 
 func read_and_show():
-	var file = FileAccess.open("data.json", FileAccess.READ)
+	var file = FileAccess.open(ProjectSettings.globalize_path("res://data.json"), FileAccess.READ)
 	if file:
-		var data = JSON.parse_string(file.get_as_text())
-		var latest_data = data[0]
-		print(typeof(latest_data))
-		print(latest_data)
+		print("file found")
+		var read_newest_data = "test"
+		var data_list = ListText.instantiate()
+		data_list.get_node("./Text").text = read_newest_data
+		List.add_child(data_list)
 		file.close()
 
 func update_info(size_l:int):
 	return
 
 func execute_fetcher():
-	OS.execute("nohup", [])
+	OS.execute(ProjectSettings.globalize_path("res://internet_fetcher"), [])
 	print("Ran execute_fetcher")
 	return
